@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+:root {
+    --darkBackground: #212429;
+    --lightBackground: #242831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #eee;
+    box-sizing: box-sizing;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.mainApp {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: var(--darkBackground);
+}
+
+.mainAppWrapper {
+    margin: 0 auto;
+    padding: 4rem 0 2rem 0;
+    height: 100%;
+    width: 60%;
+}
+
+.genreContainer {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.genreItem {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--lightBackground);
+}
+
+.genreListingsContainer {
+    width: 100%;
+    position: relative;
+}
+
+.genreListing {
+    display: block;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    background-color: var(--lightBackground);
+}
+
+.listingAuthor {
+    opacity: 0.6;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .genreContainer {
+        flex-wrap: wrap !important;
+    }
+
+    .genreItem {
+        margin-bottom: 0.5rem;
+    }
+
+    .genreListing {
+        padding: 1rem 2rem;
+    }
+
+    .mainAppWrapper {
+        width: calc(100% - 2rem);
+    }
+}
